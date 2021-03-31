@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmFileInput.msgnode="ComIbmFileInput.msgnode" xmlns:ComIbmFileOutput.msgnode="ComIbmFileOutput.msgnode" xmlns:ComIbmMSLMapping.msgnode="ComIbmMSLMapping.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="FileInputFixedLength.msgflow" nsPrefix="FileInputFixedLength.msgflow">
-  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1" nodeLayoutStyle="RECTANGLE">
     <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
     <translation xmi:type="utility:TranslatableString" key="FileInputFixedLength" bundleName="FileInputFixedLength" pluginId="ExampleFileInputFixedLength"/>
     <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/ExampleFileInputFixedLength/icons/full/obj16/FileInputFixedLength.gif"/>
     <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/ExampleFileInputFixedLength/icons/full/obj30/FileInputFixedLength.gif"/>
     <composition>
-      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="210,63" mappingExpression="msl://{default}#FileInputFixedLength_Mapping">
+      <nodes xmi:type="ComIbmMSLMapping.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="223,32" mappingExpression="msl://{default}#FileInputFixedLength_Mapping">
         <translation xmi:type="utility:ConstantString" string="Mapping"/>
       </nodes>
-      <nodes xmi:type="ComIbmFileOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="352,108" outputDirectory="C:\temp\FileOutput" outputFilename="FixedLengthOutput.txt" recordDefinition="delimited">
+      <nodes xmi:type="ComIbmFileOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="423,72" outputDirectory="C:\temp\FileOutput" outputFilename="FixedLengthOutput.txt" recordDefinition="delimited">
         <translation xmi:type="utility:ConstantString" string="File Output"/>
       </nodes>
-      <nodes xmi:type="ComIbmFileInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="80,108" inputDirectory="C:\temp\FileInput" filenamePattern="FixedLengthInput.txt" messageDomainProperty="BLOB" recordDetection="fixedLength" recordLength="20">
+      <nodes xmi:type="ComIbmFileInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_4" location="29,71" inputDirectory="C:\temp\FileInput" filenamePattern="FixedLengthInput.txt" messageDomainProperty="BLOB" recordDetection="fixedLength" recordLength="20">
         <translation xmi:type="utility:ConstantString" string="File Input"/>
       </nodes>
       <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
